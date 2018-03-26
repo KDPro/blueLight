@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="toast.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="shareHtml.css">
+    <title>蓝光金荷花国际时装城邀您一起定制专属新年海报</title>
+</head>
+<body>
+<div class="icon">
+    <img src="img/logo.png" alt="">
+</div>
+<div class="music">
+    <img src="img/music.png" alt="">
+</div>
+<div id="zero" class="">
+    <img class="logo hide" src="img/logo.png" alt="">
+    <header class="clear">
+        <img class="lamb left" src="img/lamb.png" alt="">
+        <div class="title">
+            <img src="img/headerLine.png" alt="">
+            <p>蓝光金荷花国际时装城</p>
+            <div></div>
+        </div>
+        <img class="lamb right" src="img/lamb.png" alt="">
+    </header>
+    <div class="img">
+        <div class="couplet">
+            <p class="left">凯歌辞旧岁</p>
+            <p class="right">盛世展宏图</p>
+        </div>
+        <img src="img/typeBg1.jpg" alt="">
+    </div>
+    <div class="year">
+        <img class="yearBox" src="img/blessing.png" alt="">
+        <div class="yearY"><span>祝大家新年快乐</span></div>
+    </div>
+    <div class="bottom clear">
+        <div class="address">
+            <div>
+                <img src="img/address.png" alt="">
+                <p>中国·成都·荷花池</p>
+            </div>
+        </div>
+        <img class="bottom1" src="img/bottomYear2.png" alt="">
+        <img class="tiger left" src="img/bottomYear4.png" alt="">
+        <img class="tiger right" src="img/bottomYear3.png" alt="">
+        <div class="button">点击制作</div>
+        <div class="code hide">
+        </div>
+    </div>
+</div>
+<div id="one" class="">
+    <header>
+        <img class="lamb" src="img/lamb.png" alt="">
+        <img class="title" src="img/happyNewYear.png" alt="">
+        <img class="lamb right" src="img/lamb.png" alt="">
+    </header>
+    <div class="happy">
+        <img src="img/happy.png" alt="">
+    </div>
+    <div class="input">
+        <input class="name" type="text" maxlength="10" placeholder="某某某店(最多10个字)">
+        <input class="l" type="text" maxlength="7" placeholder="请输入左对联(最多7个字)">
+        <input class="r" type="text" maxlength="7" placeholder="请输入右对联(最多7个字)">
+        <input class="ble" type="text" maxlength="13" placeholder="请输入祝福语(最多13个字)">
+        <input class="addr" type="text" placeholder="请输入店铺号">
+        <h4>请选择业态</h4>
+        <div class="type">
+            <div class="typeImg" data-id="1">
+                <img src="img/type1.png" alt="">
+                <div class="typeActive hide"><span>服饰</span></div>
+            </div>
+            <div class="typeImg" data-id="2">
+                <img src="img/type2.png" alt="">
+                <div class="typeActive hide"><span>饰品</span></div>
+            </div>
+            <div class="typeImg" data-id="3">
+                <img src="img/type3.png" alt="">
+                <div class="typeActive hide"><span>箱包</span></div>
+            </div>
+            <div class="typeImg" data-id="4">
+                <img src="img/type4.png" alt="">
+                <div class="typeActive hide"><span>百货</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="year">
+        <img class="yearBox" src="img/bottomYear.png" alt="">
+        <img class="yearY" src="img/2018.png" alt="">
+    </div>
+    <div class="bottom">
+        <img class="bottom1" src="img/bottomYear2.png" alt="">
+        <img class="tiger left" src="img/bottomYear4.png" alt="">
+        <img class="tiger right" src="img/bottomYear3.png" alt="">
+        <div class="button">确定制作</div>
+    </div>
+</div>
+<div id="three" class="hide">
+    <div class="canvas">
+        <img class="loading" src="img/loading.gif" alt="">
+    </div>
+    <div class="button">
+        <div>重新制作</div>
+        <span>长按海报保存</span>
+    </div>
+</div>
+<audio id="musicfx" loop="loop" controls="controls" autoplay="autoplay">
+    <source src="img/music.mp3" type="audio/mpeg">
+</audio>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.arctext.js"></script>
+<script src="js/html2canvas.js"></script>
+<script src="js/jquery.qrcode.min.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/shareHtml.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+    var audio = document.getElementById('musicfx');
+    function audioAutoPlay(audio) {
+        audio.play();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+        }, false);
+        document.addEventListener('YixinJSBridgeReady', function () {
+            audio.play();
+        }, false);
+    }
+    audioAutoPlay(audio);//audio标签的id
+
+
+</script>
+</body>
+</html>
